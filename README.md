@@ -9,12 +9,12 @@ Features:
 
 Copy `Custom.css` to `User Stylesheets` in your Chrome folder. The locations of the folders are as listed: 
 
-Mac: ~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
+Mac: `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
 
-PC: C:UsersYourUsernameAppDataLocalGoogleChromeUser DataDefaultUser StyleSheetsCustom.css
+PC: `C:\Users\YourUsername\AppData\Local\GoogleChrome\User Data\Default\User StyleSheets\Custom.css`
 
-Ubuntu (Chromium): ~/.config/chromium/Default/User StyleSheets/Custom.css
+Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
-Credits to [Darcy Clarke][http://darcyclarke.me/] for the file locations
+Credits to [Darcy Clarke](http://darcyclarke.me/) for the file locations
 
-For more details on how to install the theme, see [this blog post][http://darcyclarke.me/design/skin-your-chrome-inspector/]
+For more details on how to install the theme, see [this blog post](http://darcyclarke.me/design/skin-your-chrome-inspector/)
