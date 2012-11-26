@@ -28,3 +28,9 @@ Credits to [Darcy Clarke](http://darcyclarke.me/) for the file locations
 For more details on how to install the theme, see [this blog post](http://darcyclarke.me/design/skin-your-chrome-inspector/)
 
 ## Screenshots
+
+Elements tab
+![Elements tab](http://mauricelam.github.com/DockToRight/images/elements.png)
+
+Network tab
+![Network tab](http://mauricelam.github.com/DockToRight/images/network.png)
