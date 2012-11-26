@@ -34,3 +34,11 @@ Elements tab
 
 Network tab
 ![Network tab](http://mauricelam.github.com/DockToRight/images/network.png)
+
+## Known Issues
+
+If you are willing to improve on these, I will be more than happy to incorporate patches / fixes here. 
+
+- Doesn't work well with Windows / Linux on the toolbar. 
+- The bottom bar does not work well (parts of it is still not visible / clickable)
+- The settings HUD is still ugly :P
