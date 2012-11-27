@@ -87,6 +87,8 @@
 
 #-webkit-web-inspector #toolbar-dropdown {
     background: rgba(230, 230, 230, 0.9) !important;
+    left: auto !important;
+    right: 0 !important;
 }
 
 #-webkit-web-inspector #toolbar .toolbar-label {
@@ -106,6 +108,8 @@
     height: 27px;
     color: transparent;
     border-radius: 0 !important;
+    font-size: 0 !important;
+    width: 15px !important;
     opacity: 0.5;
 }
 
@@ -127,7 +131,7 @@
 	top: -2px;
 }
 
-#-webkit-web-inspector #toolbar button.toolbar-item:first-of-type {
+#-webkit-web-inspector #toolbar > button.toolbar-item:first-of-type {
     margin-left: 45px !important;
 }
 
