@@ -10,8 +10,10 @@ Chrome dev tools theme designed for use with dock-to-right feature. It optimizes
 - Console as first tab (so it's visible even if you don't have space for all tabs)
 - Sliding Styles panels by pressing Esc (when you are focusing on the styles instead of the DOM tree)
 
-## Platforms
-Currently this theme is designed for the Mac. There will be a little trouble on Windows and Linux where the close button is on the right instead of the left. I will be glad if anyone is willing to fix those. I will be more than happy to put them back in. 
+## Compatibility
+Currently this theme is designed for the Mac. I think it would work on Windows and Linux but I didn't test those. I suspect there will be some minor issues, and I will be glad if anyone is willing to fix those. 
+
+I have tested this on the current Chrome Canary (v25) and Chrome Stable (v23), as of 1st Dec, 2012. Let me know if there are any issues with these or other versions. 
 
 ## Installation
 
@@ -35,10 +37,14 @@ Elements tab
 Network tab
 ![Network tab](http://mauricelam.github.com/DockToRight/images/network.png)
 
+## Customization
+
+I have divided the CSS script into sections. Sections are separated by an exaggerated 3-line block comment, with a title in it describing the contents below. Each section can stand on its own, so you can delete the ones you don't need. 
+Additional one-line comments is available for more details. In general, blocks separated by one-line comments should be used with the whole section, except for `(optional add-on)`, which if you use the section, you can separately decide whether to include the add-on. 
+
 ## Known Issues
 
 If you are willing to improve on these, I will be more than happy to incorporate patches / fixes here. 
 
-- Doesn't work well with Windows / Linux on the toolbar. 
 - The bottom bar does not work well (parts of it is still not visible / clickable)
 - The settings HUD is still ugly :P
