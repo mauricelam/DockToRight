@@ -18,7 +18,7 @@ I have tested this on the current Chrome Canary (v25) and Chrome Stable (v23), a
 ## Installation
 
 Copy `Custom.css` to `User Stylesheets` in your Chrome profile directory. 
-The exact location of the profile path can be found in <chrome://version>. 
+The exact location of the profile path can be found in <a href="chrome://version">chrome://version</a>. 
 
 The default locations of the folders are as listed: 
 
