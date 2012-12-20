@@ -17,7 +17,10 @@ I have tested this on the current Chrome Canary (v25) and Chrome Stable (v23), a
 
 ## Installation
 
-Copy `Custom.css` to `User Stylesheets` in your Chrome folder. The locations of the folders are as listed: 
+Copy `Custom.css` to `User Stylesheets` in your Chrome profile directory. The exact location of the profile path can be found in chrome://version. 
+
+
+The default locations of the folders are as listed: 
 
 Mac: `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
 
@@ -25,7 +28,7 @@ PC: `C:\Users\YourUsername\AppData\Local\Google\Chrome\User Data\Default\User St
 
 Ubuntu (Chromium): `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
-Credits to [Darcy Clarke](http://darcyclarke.me/) for the file locations
+Credits to [Darcy Clarke](http://darcyclarke.me/) and his sources for the file locations
 
 For more details on how to install the theme, see [this blog post](http://darcyclarke.me/design/skin-your-chrome-inspector/)
 
@@ -44,7 +47,4 @@ Additional one-line comments is available for more details. In general, blocks s
 
 ## Known Issues
 
-If you are willing to improve on these, I will be more than happy to incorporate patches / fixes here. 
-
 - The bottom bar does not work well (parts of it is still not visible / clickable)
-- The settings HUD is still ugly :P

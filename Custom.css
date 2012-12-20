@@ -2,6 +2,10 @@
  * New icon + icon only toolbar
  *************************************/
 
+ #-webkit-web-inspector #toolbar .toolbar-item .toolbar-icon {
+    display: block !important;
+ }
+
 #-webkit-web-inspector .toolbar-item.audits .toolbar-icon {
     background-image: url(data:image/png;base64,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) !important;
 }
@@ -121,6 +125,8 @@
     position: absolute;
     left: -2px;
     top: -2px;
+    padding: 0 6px;
+    margin-top: 4px !important;
 }
 
 #-webkit-web-inspector #toolbar > button.toolbar-item:first-of-type {
@@ -132,7 +138,7 @@
     position: absolute;
     top: 0;
     left: 20px;
-    z-index: 999999;
+    /*z-index: 999999;*/
 }
 
 /** Remove console from dropdown */
@@ -471,4 +477,116 @@
     vertical-align: bottom;
     position: static !important;
     height: 200px;
+}
+
+/************************************
+ * Settings reskin
+ ************************************/
+
+/** Uniform tab bar for both Canary and Stable */
+/** Make the tab bar thin and on top (don't take up precious horizontal space) */
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-content {
+    left: 0 !important;
+    position: relative !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-content header {
+    display: none;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-content .help-container-wrapper {
+    top: 0 !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header {
+    top: 0 !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .help-window-main {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header-tab {
+    margin: 2px 5px !important;
+    padding: 0 0 !important;
+    width: auto !important;
+    cursor: default !important;
+    border: none !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .help-window-label {
+    display: none !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header-tab.selected {
+    border-bottom: 2px solid #666 !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header, 
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header-tabs {
+    width: 100% !important;
+}
+
+/** Close button no background */
+
+#-webkit-web-inspector #settings-screen .help-close-button {
+    background: transparent !important;
+    color: #999 !important;
+}
+
+#-webkit-web-inspector #settings-screen .help-close-button:hover {
+    color: #666 !important;
+}
+
+/** Container correct width */
+
+#-webkit-web-inspector #settings-screen .help-container {
+    width: auto !important;
+}
+
+/** Shortcut tab */
+
+#-webkit-web-inspector.dock-to-right:not(.detached) .help-key-cell {
+    width: auto !important;
+}
+
+#-webkit-web-inspector .help-key-cell > span {
+    color: #999 !important;
+}
+
+/** Thinner scrollbar */
+
+#-webkit-web-inspector .help-window-main ::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+/** Small fonts for settings */
+
+#-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-content * {
+    font-size: 10px !important;
+}
+
+/** More line breaks in Overrides tab */
+
+#-webkit-web-inspector .settings-tab-container .help-block {
+    width: auto !important;
+}
+
+#-webkit-web-inspector .settings-tab-container .help-block fieldset > table {
+    white-space: normal !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block fieldset > table td:first-child {
+    display: block !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block fieldset > table td:nth-child(2) {
+    display: block !important;
+}
+
+#-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block #metrics-override-width,
+#-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block #metrics-override-height {
+    width: 40px !important;
 }
