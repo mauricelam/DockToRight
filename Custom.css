@@ -76,7 +76,7 @@
 }
 
 #-webkit-web-inspector #toolbar > .toolbar-item .toolbar-label {
-    display: none;
+    display: none !important;
 }
 
 /** Dropdown */
