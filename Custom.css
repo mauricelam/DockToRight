@@ -2,9 +2,32 @@
  * New icon + icon only toolbar
  *************************************/
 
- #-webkit-web-inspector #toolbar .toolbar-item .toolbar-icon {
+#-webkit-web-inspector #toolbar .toolbar-item .toolbar-icon {
     display: block !important;
- }
+}
+
+/** List of known icons */
+#-webkit-web-inspector #toolbar .toolbar-item.audits .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.console .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.elements .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.network .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.profiles .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.resources .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.scripts .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.timeline .toolbar-icon {
+    background-position: 0 0 !important;
+}
+
+#-webkit-web-inspector #toolbar .toolbar-item.audits.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.console.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.elements.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.network.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.profiles.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.resources.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.scripts.toggled-on .toolbar-icon,
+#-webkit-web-inspector #toolbar .toolbar-item.timeline.toggled-on .toolbar-icon {
+    -webkit-filter: saturate(5) hue-rotate(-40deg) !important;
+}
 
 #-webkit-web-inspector .toolbar-item.audits .toolbar-icon {
     background-image: url(data:image/png;base64,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) !important;
@@ -46,7 +69,7 @@
 }
 
 #-webkit-web-inspector .toolbar-item.toggleable.toggled-on .toolbar-icon {
-    -webkit-filter: saturate(5) hue-rotate(-40deg) !important;
+    -webkit-filter: none !important;
     opacity: 1 !important;
 }
 
@@ -60,7 +83,7 @@
 #-webkit-web-inspector #toolbar .toolbar-icon {
     -webkit-filter: grayscale(1);
     opacity: 0.8;
-    background-position: 0 0 !important;
+    background-position: -2px -3px !important;
     width: 27px !important;
     height: 21px !important;
 }

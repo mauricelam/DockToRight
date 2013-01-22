@@ -1,7 +1,7 @@
 DockToRight
 ===========
 
-Chrome dev tools theme designed for use with dock-to-right feature. It optimizes the panel so that it is usable being tall and slim. 
+Chrome dev tools theme designed for use with dock-to-right feature. It optimizes the panels so that it is usable being tall and slim. 
 
 ## Features
 - New dock icons (mostly to make them occupy less space)
