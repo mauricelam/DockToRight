@@ -105,7 +105,7 @@
 
 /** Dropdown */
 
-#-webkit-web-inspector #toolbar #toolbar-controls > .toolbar-item {
+#-webkit-web-inspector #toolbar #toolbar-controls > .toolbar-item:not(.close-right) {
     padding: 0 !important;
     overflow: hidden;
     height: 100%;
@@ -158,11 +158,19 @@
     margin-left: 45px !important;
 }
 
+#-webkit-web-inspector.platform-windows #toolbar > button.toolbar-item:first-of-type {
+    margin-left: 31px !important;
+}
+
 #-webkit-web-inspector .toolbar-item.console {
     position: absolute;
     top: 1px;
     left: 20px;
     /*z-index: 999999;*/
+}
+
+#-webkit-web-inspector.platform-windows .toolbar-item.console {
+    left: 5px;
 }
 
 /** Remove console from dropdown */
