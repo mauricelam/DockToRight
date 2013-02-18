@@ -13,7 +13,13 @@ Chrome dev tools theme designed for use with dock-to-right feature. It optimizes
 ## Compatibility
 Currently this theme is designed for the Mac. I think it would work on Windows and Linux but I didn't test those. I suspect there will be some minor issues, and I will be glad if anyone is willing to fix those. 
 
-I have tested this on the current Chrome Canary (v25) and Chrome Stable (v23), as of 1st Dec, 2012. Let me know if there are any issues with these or other versions. 
+I have tested this on the current Chrome Canary (v27) and Chrome Stable (v24), as of 18th Feb, 2013. Let me know if there are any issues with these or other versions. 
+
+## Chromium Issue
+
+There is a related Chromium issue that will get Chromium developers' attentions and efforts on the issue. Star this issue to see the changes built into Chrome as soon as possible. 
+
+Feb 18 2013: I believe work has already started. Starting to see general class names for split view panels. Yay!
 
 ## Installation
 
