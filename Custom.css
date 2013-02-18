@@ -186,7 +186,9 @@
         bottom: auto !important;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents.split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents.split-view-sidebar-right,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  .split-view-contents.split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  .split-view-contents.split-view-sidebar-right {
         width: 100% !important;
         height: 25% !important;
@@ -221,7 +223,9 @@
     /** When you show the console (press Esc) the styles split-view will occupy more space */
 
     #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements .split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts .split-view-sidebar-right {
+    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements .split-view-contents-second,
+    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts .split-view-sidebar-right,
+    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts .split-view-contents-second {
         height: 60% !important;
     }
 
@@ -230,7 +234,9 @@
         height: 40% !important;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-sidebar-right,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts .split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts .split-view-sidebar-right {
         -webkit-transition: height 0.2s ease 0;
     }
@@ -238,9 +244,12 @@
     /************************************
      * Vertical split view (for split view left, i.e. Resources, Audits and Profiles)
      ************************************/
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first, 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left, 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.audits .split-view-contents-first,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.audits .split-view-sidebar-left,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-sidebar-left{
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-contents-first,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-sidebar-left {
         width: 100% !important;
         height: 20% !important;
         box-shadow: 0 1px 2px rgba(0,0,0,0.5);
@@ -266,7 +275,8 @@
     }
 
     /** Sliding resources panel (Optional add-on) */
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first {
         height: 5% !important;
         top: auto !important;
         bottom: 0 !important;
@@ -279,6 +289,7 @@
         height: 95% !important;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first:hover,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left:hover {
         height: 30% !important;
     }
@@ -316,6 +327,7 @@
 
     /** Middle and Bottom panel */
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .sidebar-tree-section,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .sidebar-tree-section {
         /** COUNTERS and RECORDS label */
         padding-left: 0px !important;
@@ -333,6 +345,7 @@
         width: auto !important;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left {
         width: 40px !important;
         overflow: visible !important;
@@ -345,12 +358,14 @@
         overflow: hidden;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item {
         text-overflow: clip !important;
         display: inline-block !important;
         width: 100%;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item:hover {
         width: auto;
         background-color: rgba(214, 221, 229, 0.8) !important;
@@ -359,10 +374,12 @@
         z-index: 999999;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover:nth-child(odd),
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item:hover:nth-child(odd) {
         background-color: rgba(203, 209, 217, 0.8) !important;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover > span:last-child,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item:hover > span:last-child {
         padding-right: 2px;
     }
@@ -377,10 +394,12 @@
         z-index: 0;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline #memory-graphs-container .split-view-contents-first,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline #memory-graphs-container .split-view-sidebar-left {
         z-index: 1;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .memory-counter-sidebar-info {
         white-space: nowrap;
         overflow: hidden !important;
@@ -390,10 +409,12 @@
         width: 100%;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info:hover,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .memory-counter-sidebar-info:hover {
         width: auto;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info:hover > div,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .memory-counter-sidebar-info:hover > div {
         background: rgba(215, 221, 229, 0.8);
         box-shadow: 0 1px 3px rgba(0,0,0,1);
@@ -452,6 +473,7 @@
         -webkit-flex-direction: column;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .split-view-contents-first,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .split-view-sidebar-left {
         width: 100% !important;
         -webkit-flex: 1;
