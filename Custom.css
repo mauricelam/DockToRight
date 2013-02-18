@@ -187,7 +187,7 @@
      ************************************/
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents:first-child,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  .split-view-contents:first-child {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view > .split-view-contents:first-child {
         width: 100%;
         height: 75%;
         top: auto !important;
@@ -196,7 +196,7 @@
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents.split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents.split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  .split-view-contents.split-view-contents-second,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view >  .split-view-contents.split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  .split-view-contents.split-view-sidebar-right {
         width: 100% !important;
         height: 25% !important;
@@ -233,18 +233,18 @@
     #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements .split-view-sidebar-right,
     #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements .split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts .split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts .split-view-contents-second {
+    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts > .split-view > .split-view-contents-second {
         height: 60% !important;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements .split-view-contents:first-child,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts .split-view-contents:first-child {
+    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts > .split-view > .split-view-contents:first-child {
         height: 40% !important;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts .split-view-contents-second,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view > .split-view-contents-second,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts .split-view-sidebar-right {
         -webkit-transition: height 0.2s ease 0;
     }
