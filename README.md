@@ -24,7 +24,7 @@ Feb 18 2013: I believe work has already started. Starting to see general class n
 ## Installation
 
 Copy `Custom.css` to `User Stylesheets` in your Chrome profile directory. 
-The exact location of the profile path can be found in chrome://version. 
+The exact location of the profile path can be found in `chrome://version`. 
 
 The default locations of the folders are as listed: 
 
