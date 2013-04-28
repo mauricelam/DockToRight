@@ -18,6 +18,7 @@ I have tested this on the current Chrome Canary (v28) and Chrome Stable (v26), a
 ## Chromium Issue
 
 There is a related Chromium issue that will get Chromium developers' attentions and efforts on the issue. Star this issue to see the changes built into Chrome as soon as possible. 
+[https://code.google.com/p/chromium/issues/detail?id=168655]
 
 Feb 18 2013: I believe work has already started. Starting to see general class names for split view panels. Yay!
 
