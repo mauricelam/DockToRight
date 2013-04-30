@@ -541,10 +541,15 @@
         background: transparent !important;
         z-index: -1 !important;
         border-right: none !important;
+        text-align: left !important;
+
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines .webkit-line-number {
+    /** Align line number to the left */
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines .webkit-line-number,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines .webkit-line-number * {
         color: #DDD !important;
+        text-align: left !important;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents {
