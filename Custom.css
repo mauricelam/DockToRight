@@ -305,23 +305,40 @@
     }
 
     /** Sliding resources panel (Optional add-on) */
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .outline-disclosure ol {
+        -webkit-padding-start: 5px !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left > ol,
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first > ol {
+        -webkit-padding-start: 15px !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .outline-disclosure li {
+        -webkit-padding-start: 0 !important;
+    }
+
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first {
-        height: 5% !important;
-        top: auto !important;
-        bottom: 0 !important;
-        -webkit-transition: height 0.2s ease 0.2s;
-        box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+        width: 50% !important;
+        height: 100% !important;
+        left: -45% !important;
+        box-shadow: 0 -1px 1px rgba(0,0,0,0.7);
+        -webkit-transition: left 0.2s ease 0.05s;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents:nth-child(2) {
         top: 0 !important;
-        height: 95% !important;
+        bottom: 0 !important;
+        left: 5% !important;
+        height: auto !important;
+        position: absolute !important;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first:hover,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left:hover {
-        height: 30% !important;
+        left: 0 !important;
+        -webkit-transition: left 0.2s ease 0.2s;
     }
 
     /************************************
@@ -474,14 +491,13 @@
         overflow: visible !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .network-log-grid.data-grid table.data td:not(:last-child):hover > div {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .network-log-grid.data-grid table.data td:not(.timeline-column):hover > div {
         overflow: visible !important;
         position: relative;
         display: inline-block;
         background-color: rgba(255,255,255,0.9);
-        color: black;
-        box-shadow: 0 1px 3px rgba(0,0,0,1);
-        padding: 0 2px !important;
+        border: 1px solid #AAA;
+        padding-right: 2px !important;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .network-log-grid.data-grid table.header th > div,
@@ -516,6 +532,34 @@
         height: 40% !important;
         position: relative !important;
         -webkit-flex: 0;
+    }
+
+    /************************************
+     * Text editor
+     ************************************/
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines {
+        background: transparent !important;
+        z-index: -1 !important;
+        border-right: none !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines .webkit-line-number {
+        color: #DDD !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents {
+        left: 0 !important;
+    }
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents .inner-container {
+        left: 30px !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents .webkit-line-content > :not(.webkit-whitespace):not(.webkit-line-decorations) {
+        background-color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents .webkit-line-content {
+        text-shadow: 0 0 5px white;
     }
 
     /************************************
