@@ -554,9 +554,9 @@
         left: 30px !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents .webkit-line-content > :not(.webkit-whitespace):not(.webkit-line-decorations) {
+/*    #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents .webkit-line-content > :not(.webkit-whitespace):not(.webkit-line-decorations) {
         background-color: rgba(255, 255, 255, 0.9) !important;
-    }
+    }*/
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-contents .webkit-line-content {
         text-shadow: 0 0 5px white;
