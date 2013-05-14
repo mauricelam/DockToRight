@@ -20,8 +20,8 @@ I have tested this on the current Chrome Canary (v28) and Chrome Stable (v26), a
 ~~There is a related Chromium issue that will get Chromium developers' attentions and efforts on the issue. Star this issue to see the changes built into Chrome as soon as possible. 
 [https://code.google.com/p/chromium/issues/detail?id=168655]~~
 
-14 May, 2013: Current Chrome Canary (29.0) now has a more usable elements panel when docked to the right. In my taste (and my small MacBook Air display), the usuable size is still too big. Their design starts to be usable at around 400px, while I believe my design makes it possible to use at 270px. 
-This allows me to simply open the inspector and still focus on the contents of the webpage. 
+14 May, 2013: Current Chrome Canary (29.0) now has a more usable elements panel when docked to the right. 
+I still like mine better because still the minimum usable size is smaller on my version :P
 
 ## Installation
 
