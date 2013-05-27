@@ -538,17 +538,16 @@
      * Text editor
      ************************************/
     #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines {
-        background: transparent !important;
-        z-index: -1 !important;
+        background: rgba(255, 255, 255, 0.01) !important;
+        z-index: 999 !important;
         border-right: none !important;
         text-align: left !important;
-
     }
 
     /** Align line number to the left */
     #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines .webkit-line-number,
     #-webkit-web-inspector.dock-to-right:not(.detached) .text-editor-lines .webkit-line-number * {
-        color: #DDD !important;
+        color: rgba(0, 0, 0, 0.3) !important;
         text-align: left !important;
     }
 
@@ -717,6 +716,12 @@
     #-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block #metrics-override-width,
     #-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block #metrics-override-height {
         width: 40px !important;
+    }
+
+    /** Bottom bar make it smaller */
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) #bottom-status-bar-container select {
+        max-width: 100px !important;
     }
 
 }
