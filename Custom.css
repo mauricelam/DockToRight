@@ -29,6 +29,7 @@
     -webkit-filter: saturate(5) hue-rotate(-40deg) !important;
 }
 
+/** TODO: Retina graphics */
 #-webkit-web-inspector .toolbar-item.audits .toolbar-icon {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAVCAYAAAC33pUlAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS4xLjIiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAxMi0xMS0yMlQyMjo1NTowNjwveG1wOkNyZWF0ZURhdGU+CiAgICAgICAgIDx4bXA6Q3JlYXRvclRvb2w+QWRvYmUgRmlyZXdvcmtzIENTNS4xIDExLjEuMC4yMDUgTWFjaW50b3NoPC94bXA6Q3JlYXRvclRvb2w+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0ZT4yMDEyLTExLTIyVDIzOjM1OjI4PC94bXA6TW9kaWZ5RGF0ZT4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Ch9fC68AAAOHSURBVEgNvVVJaBNhFM7MZCYxWxu6JOJSLLWlRGmU0qqtSou0KoVSLVjpwYuiCOpNEA8i3rx78VoPeqglolZSbBWqEFxQqkgXaHPoappMmjbOJJkZv1eTEuNM8SA++Hh/3vbN++e9CaNpmul/Cfu/iIjHrEfGMMy6WVEUprHxUHUqZbnN884TDMM5yaFpSiKdTgwKgnwrFHo7wXGc7vUU3hpTaKBiRAY729LS1iRJrqdFRR6n3e5WBYFXyJ9KpbhkMs6K4kLCal3pGBkJvkGOSr58Kayt2xl11N3ds0dRyp55vRWOsrKyRHv73hf79lXN/Pghm9+/n6wZHZ08arW6nMvL4WeIbUbOmFGHuQfQJWNZ1hKNqndKSiodpaXlazdvnr5bUbHjI5KWANbnq9laVzf2+d694avoyBGNTt5Bzhn4pFxhPa1LhsAim81zzG4v1vz+8gCIXsI2DqwB9EKn/f690aqqd3WyLJ9IpTzHYCsCNiUzmkanILhsDN5oe3vjAIpMqKoqoosUIOO8DNt4c3NtP7QiCM4t0OvDA20oRmRmjuNN6XTaNDc3R4UT+e8je14RRXE+k8mYKBZidEsb5EZkJp5nJdqA+/cfNG9EFxz6+gZaNU01m82cXODS/WlElikvt9N0cZGIdu38+Yu1NKG5CnTu7T3nF0X2MrpiPB77GHyZnN9IG5ElOjr29/E8Lzkc3pKpqdWX9fVHbhw4cHBnU9Ph7Q0NLddnZ9Uhp9NrQ1sZr9caAgENz6aiu9TIsAK1z58Pn+3v/3RlZSVuiccX1GRSTFM1m80tFBd7GZerVMlkZDYWCy+x7NLFgYGHT/OXu3CpdckwbQz2hkbZFwp9aBscHDsVDn/fLUmShcgsli1yZaVnyufbPjM8/LVpYWGxOBKZXmPZSPfIyItgjvCvyBC8/rlCXRewC6gBtgLUMQnt03cgHQgEDwcCXy7E4zE+FpsOK8ripdevh4aIsJDMcFwpGIMQR4ffUHQOoD3KxdMwJAGms7NtHtoUDE70YDIrMFCPW1uPnwZREObfvpe5ZIr/Q7L7RF0QFgsDUJAGTALhI1y98uSJfAkPaRNF023YR4HV/JxNyfID9c7Zq4rB97Wr6zj+LVj21avxk263QjdhB34j0x0QFNGrbWjLduhGQDWwDaAP9hcgCmzIPyGjallCG47UEa1IIquhfokuWc75r/VPyp5+45C+9bUAAAAASUVORK5CYII=) !important;
 }
@@ -183,26 +184,8 @@
 @media screen and (max-width: 480px) {
 
     /************************************
-     * Vertical split view (for split view right, i.e. Elements and Scripts)
+     * Vertically layout metrics under styles
      ************************************/
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements > .split-view > .split-view-contents:first-child,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view > .split-view-contents:first-child {
-        width: 100%;
-        height: 75%;
-        top: auto !important;
-        bottom: auto !important;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements > .split-view > .split-view-contents.split-view-contents-second,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements > .split-view > .split-view-contents.split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view >  .split-view-contents.split-view-contents-second,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view > .split-view-contents.split-view-sidebar-right {
-        width: 100% !important;
-        height: 25% !important;
-        left: 0;
-        box-shadow: 0 -1px 2px rgba(0,0,0,0.5);
-    }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .sidebar-pane.composite .split-view.split-view-vertical {
         overflow: auto !important;
@@ -223,52 +206,6 @@
 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents .sidebar-pane-toolbar {
         z-index: 999999;
-    }
-    
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements > .split-view,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  > .split-view {
-        display: -webkit-flex;
-        -webkit-flex-flow: column;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements > .split-view > * ,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  > .split-view > * {
-        -webkit-flex: 0.7;
-        position: relative !important;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements > .split-view > :first-child,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts  > .split-view > :first-child {
-        -webkit-flex: 1;
-    }
-
-    /** Hide the resizers */
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-resizer,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts .split-view-resizer {
-        display: none;
-    }
-
-    /** Vertical Sliding CSS tray (Optional add-on) */
-    /** When you show the console (press Esc) the styles split-view will occupy more space */
-
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements > .split-view > .split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements > .split-view > .split-view-contents-second,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts > .split-view > .split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts > .split-view > .split-view-contents-second {
-        height: 60% !important;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.elements > .split-view > .split-view-contents:first-child,
-    #-webkit-web-inspector.dock-to-right:not(.detached).drawer-visible .panel.scripts > .split-view > .split-view-contents:first-child {
-        height: 40% !important;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-contents-second,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.elements .split-view-sidebar-right,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts > .split-view > .split-view-contents-second,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.scripts .split-view-sidebar-right {
-        -webkit-transition: height 0.2s ease 0;
     }
 
     /************************************
@@ -572,7 +509,7 @@
 
      /** A 2-line console that slides up when you hover on it */
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) #drawer {
+    /*#-webkit-web-inspector.dock-to-right:not(.detached) #drawer {
         z-index: 9;
         box-shadow: 0 -2px 1px rgba(0,0,0,0.5);
         height: 63px !important;
@@ -604,7 +541,7 @@
         vertical-align: bottom;
         position: static !important;
         height: 200px;
-    }
+    }*/
 
     /************************************
      * Settings reskin
