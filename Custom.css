@@ -87,6 +87,7 @@
     background-size: 27px 21px;
     width: 27px !important;
     height: 21px !important;
+    -webkit-transform: translateZ(0);
 }
 
 #-webkit-web-inspector #toolbar {
