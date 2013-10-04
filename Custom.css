@@ -211,11 +211,8 @@
      * Vertical split view (for split view left, i.e. Resources, Audits and Profiles)
      ************************************/
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first, 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left, 
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.audits .split-view-contents-first,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.audits .split-view-sidebar-left,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-contents-first,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-sidebar-left {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-contents-first {
         width: 100% !important;
         height: 20% !important;
         box-shadow: 0 1px 2px rgba(0,0,0,0.5);
@@ -237,7 +234,7 @@
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.audits .split-view-resizer,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-resizer,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-resizer {
-        display: none;
+        /*display: none;*/
     }
 
     /** Sliding resources panel (Optional add-on) */
@@ -245,7 +242,6 @@
         -webkit-padding-start: 5px !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left > ol,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first > ol {
         -webkit-padding-start: 15px !important;
     }
@@ -254,7 +250,6 @@
         -webkit-padding-start: 0 !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left,
     #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first {
         width: 50% !important;
         height: 100% !important;
@@ -271,8 +266,7 @@
         position: absolute !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first:hover,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-sidebar-left:hover {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents-first:hover {
         left: 0 !important;
         -webkit-transition: left 0.2s ease 0.2s;
     }
@@ -310,8 +304,7 @@
 
     /** Middle and Bottom panel */
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .sidebar-tree-section,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .sidebar-tree-section {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .sidebar-tree-section {
         /** COUNTERS and RECORDS label */
         padding-left: 0px !important;
         font-size: 8px !important;
@@ -328,8 +321,7 @@
         width: auto !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first {
         width: 40px !important;
         overflow: visible !important;
     }
@@ -341,15 +333,13 @@
         overflow: hidden;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item {
         text-overflow: clip !important;
         display: inline-block !important;
         width: 100%;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item:hover {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover {
         width: auto;
         background-color: rgba(214, 221, 229, 0.8) !important;
         box-shadow: 0 1px 3px rgba(0,0,0,1);
@@ -357,13 +347,11 @@
         z-index: 999999;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover:nth-child(odd),
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item:hover:nth-child(odd) {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover:nth-child(odd) {
         background-color: rgba(203, 209, 217, 0.8) !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover > span:last-child,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .timeline-tree-item:hover > span:last-child {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .timeline-tree-item:hover > span:last-child {
         padding-right: 2px;
     }
 
@@ -377,13 +365,11 @@
         z-index: 0;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline #memory-graphs-container .split-view-contents-first,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline #memory-graphs-container .split-view-sidebar-left {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline #memory-graphs-container .split-view-contents-first {
         z-index: 1;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .memory-counter-sidebar-info {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info {
         white-space: nowrap;
         overflow: hidden !important;
         margin: 0 !important;
@@ -392,13 +378,11 @@
         width: 100%;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info:hover,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .memory-counter-sidebar-info:hover {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info:hover {
         width: auto;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info:hover > div,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .memory-counter-sidebar-info:hover > div {
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-contents-first .memory-counter-sidebar-info:hover > div {
         background: rgba(215, 221, 229, 0.8);
         box-shadow: 0 1px 3px rgba(0,0,0,1);
         padding: 0;
@@ -447,27 +431,15 @@
     }
 
     /************************************
-     * Networks tab: Vertical split view for resource preview
+     * Networks tab: Full "screen" network details
      ************************************/
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .split-view {
-        display: -webkit-flex;
-        -webkit-flex-direction: column;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .split-view-contents-first,
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .split-view-sidebar-left {
-        width: 100% !important;
-        -webkit-flex: 1;
-        position: relative !important;
-    }
-
-    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network #network-views {
-        box-shadow: 0 -1px 3px rgba(0,0,0,0.7);
+    #-webkit-web-inspector.dock-to-right:not(.detached) .panel.network .split-view-contents-second {
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0 !important;
         left: 0 !important;
-        height: 40% !important;
-        position: relative !important;
-        -webkit-flex: 0;
+        right: 0 !important;
     }
 
     /************************************
