@@ -17,6 +17,7 @@
 #-webkit-web-inspector #toolbar .toolbar-item.resources .toolbar-label,
 #-webkit-web-inspector #toolbar .toolbar-item.sources .toolbar-label,
 #-webkit-web-inspector #toolbar .toolbar-item.scripts .toolbar-label,
+#-webkit-web-inspector #toolbar .toolbar-item.sources .toolbar-label,
 #-webkit-web-inspector #toolbar .toolbar-item.timeline .toolbar-label {
     background-position: 0 0 !important;
 }

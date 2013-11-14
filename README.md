@@ -21,7 +21,8 @@ I have tested this on the current Chrome Canary (v28) and Chrome Stable (v26), a
 [https://code.google.com/p/chromium/issues/detail?id=168655]~~
 
 14 May, 2013: Current Chrome Canary (29.0) now has a more usable elements panel when docked to the right. 
-I still like mine better because still the minimum usable size is smaller on my version ;)
+
+6 Oct, 2013: Current Chrome has vertical split views and other optimizations for dock-to-right. This theme still provides a much more aggressive space saving for the dev tools. 
 
 ## Installation
 
