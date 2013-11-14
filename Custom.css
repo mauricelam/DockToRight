@@ -536,6 +536,7 @@
 
     #-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-content .help-container-wrapper {
         top: 0 !important;
+        left: 0 !important;
     }
 
     #-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header {
@@ -563,20 +564,13 @@
         border-bottom: 2px solid #666 !important;
     }
 
+    #-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header-tabs {
+        display: block !important;
+    }
+
     #-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header, 
     #-webkit-web-inspector.dock-to-right:not(.detached) #settings-screen .tabbed-pane-header-tabs {
         width: 100% !important;
-    }
-
-    /** Close button no background */
-
-    #-webkit-web-inspector #settings-screen .help-close-button {
-        background: transparent !important;
-        color: #999 !important;
-    }
-
-    #-webkit-web-inspector #settings-screen .help-close-button:hover {
-        color: #666 !important;
     }
 
     /** Container correct width */
@@ -598,7 +592,7 @@
     /** Thinner scrollbar */
 
     #-webkit-web-inspector .help-window-main ::-webkit-scrollbar {
-        width: 8px !important;
+        width: 5px !important;
     }
 
     /** Small fonts for settings */
@@ -611,17 +605,26 @@
 
     #-webkit-web-inspector .settings-tab-container .help-block {
         width: auto !important;
+        margin-left: 5px !important;
+    }
+
+    #-webkit-web-inspector .settings-tab-container .help-block .help-section-title {
+        margin-left: -5px !important;
     }
 
     #-webkit-web-inspector .settings-tab-container .help-block fieldset > table {
         white-space: normal !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block fieldset > table td:first-child {
-        display: block !important;
+    #-webkit-web-inspector .settings-tab-container .help-block p p {
+        padding-left: 15px !important;
     }
 
-    #-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block fieldset > table td:nth-child(2) {
+    #-webkit-web-inspector .settings-tab-container #enable-devtools-on-startup {
+        margin: 0 0 0 10px !important;
+    }
+
+    #-webkit-web-inspector.dock-to-right:not(.detached) .settings-tab-container .help-block fieldset table td {
         display: block !important;
     }
 
