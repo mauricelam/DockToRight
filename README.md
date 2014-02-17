@@ -1,6 +1,12 @@
 DockToRight
 ===========
 
+----
+
+Important note: This does not work for new Blink-based versions of Chrome because it no longer supports user stylesheets. 
+
+----
+
 Chrome dev tools theme designed for use with dock-to-right feature. It optimizes the panels so that it is usable being tall and slim. 
 
 ## Features
